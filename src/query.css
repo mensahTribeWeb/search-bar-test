@@ -1,0 +1,64 @@
+/* for my view only */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(241, 167, 29, 0.911);
+  background: url(./img/search-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+/* Search Bar Section */
+  /* title */
+  h1{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 5rem;
+    color:aliceblue;
+
+  }
+  /* input container */
+ .queryInputs{
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  
+  
+ }
+
+ /* input */
+
+ .query input {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 14px;
+  width: 300px;
+  height: 30px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: aliceblue;
+ 
+ }
+
+ .queryIcon {
+  display: grid;
+  /* height: 60px; */
+  width: 50px;
+  background-color: aliceblue;
+  place-items: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+ }
+
+
+

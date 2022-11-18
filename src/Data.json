@@ -1,0 +1,1087 @@
+{
+	"info": {
+		"_postman_id": "b35a27ce-162c-41f6-a72c-44da587e0e76",
+		"name": "Toast Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21577105"
+	},
+	"item": [
+		{
+			"name": "DataDump",
+			"item": [
+				{
+					"name": "BeerDump",
+					"item": [
+						{
+							"name": "AddDuff",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://pyxis.nymag.com/v1/imgs/1ef/403/49499034ebf7c1fc90c366162319691a36-13-duff-beer.rsquare.w700.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Duff\",\n    \"beerAbv\" : 4.5,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"Sweet nectar of the gods. Endorsed by Duffman himself\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddDuffLite",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d8/85/f5/duff-beer.jpg?w=200&h=-1&s=1\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Duff Lite\",\n    \"beerAbv\" : 0.6,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"Sweet and less filling nectar of the gods. Endorsed by Duffman himself.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddDuffGold",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://i.ebayimg.com/images/g/q~wAAOSwleBfpxFj/s-l500.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Duff Gold\",\n    \"beerAbv\" : 5.2,\n    \"beerType\": \"Malt Liqour\",\n    \"beerDescription\": \"Sweet golden nectar of the gods. Endorsed by Duffman himself.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddSamAdams",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://produits.bienmanger.com/8813-0w470h470_samuel_adams_boston_lager.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Sam Adams\",\n    \"beerAbv\" : 5.0,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"Boston Lager helped lead the American craft beer revolution, reviving a passion for full-flavored, high quality brews\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddWachusettSeasonal",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://assets.untappd.com/site/beer_logos_hd/beer-4458683_fd241_hd.jpeg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Wachusett Seasonal\",\n    \"beerAbv\" : 6.6,\n    \"beerType\": \"IPA\",\n    \"beerDescription\": \"This flavorful small batch ale is the perfect balance of fresh pumpkins and a variety of spices to celebrate the season.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddDownEastCider",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://www.beeruniversestore.com/wp-content/uploads/2021/02/Downeast_9-pack_OriginalBlend.png\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Downeast Cider\",\n    \"beerAbv\" : 5.2,\n    \"beerType\": \"Hard Cider\",\n    \"beerDescription\": \"Made with hand-pressed apple cider from the Berkshires, light and crisp with an extra touch of cinnamon\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddYatooniBoska",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://thefifthtrooper.com/wp-content/uploads/2022/03/EL5L8QZX0AAJ6zD.jpeg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"YatooniBoska\",\n    \"beerAbv\" : 9.9,\n    \"beerType\": \"Stout\",\n    \"beerDescription\": \"Made from the fermented sweat of dewbacks. The scaly texture makes for a memorable experience. Twice.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddHuttsDelight",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://qph.fs.quoracdn.net/main-qimg-4633dc7e6032bf5b0653bc74b1a42d37\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Hutts Delight\",\n    \"beerAbv\" : 7.2,\n    \"beerType\": \"Pilsner\",\n    \"beerDescription\": \"A colorful slurry of aquatic organisms, mostly scraped from under Jabba's throne. When Jabba tells you to drink it, you drink it. And smile.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddBlueMilkStout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://foodisafourletterword.com/wp-content/uploads/2022/05/Star_Wars_Blue_Milk_Recipe_03.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Blue Milk Stout\",\n    \"beerAbv\" : 9.8,\n    \"beerType\": \" Milk Stout\",\n    \"beerDescription\": \"Fermented Bantha milk. Subtly sweet dark brew with low carbonation.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddGuiness",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Guinness_Glass_2010.jpg/170px-Guinness_Glass_2010.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Guiness\",\n    \"beerAbv\" : 8.7,\n    \"beerType\": \" Irish Dry Stout\",\n    \"beerDescription\": \"Has a malty sweetness and a hoppy bitterness, with notes of coffee and chocolate. A roasted flavor also comes through, courtesy of the roasted unmalted barley that goes into its brewing\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddMacsAle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://i.pinimg.com/originals/b9/37/d3/b937d30f6614466f1ec34b604328dc27.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Mac's Ale\",\n    \"beerAbv\" : 7.9,\n    \"beerType\": \"Pale Ale\",\n    \"beerDescription\": \"Goes with everything. Served warm.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddWater",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://domf5oio6qrcr.cloudfront.net/medialibrary/7909/conversions/b8a1309a-ba53-48c7-bca3-9c36aab2338a-thumb.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Water\",\n    \"beerAbv\" : 0.0,\n    \"beerType\": \"Non-Alcoholic\",\n    \"beerDescription\": \"It's water. We only make 2 beers at McAnally's\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddRomulanBrew",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://assets.untappd.com/photos/2020_04_10/d4ef26c286d749d63af513ca5bb46196_640x640.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Romulan Ale\",\n    \"beerAbv\" : 8.0,\n    \"beerType\": \"Ale\",\n    \"beerDescription\": \"An infamous blue alchoholic beverage with a powerful kick, the drink has been banned in the United Federation of Planets since before 2285 and is still not a commonly known commodity.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddAlamo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://www.giantbomb.com/a/uploads/scale_medium/8/82962/3285201-d69iejyu0aa90dw.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Alamo\",\n    \"beerAbv\" : 5.0,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"From the lukewarm headwaters of the mighty Brazos River. Winner of the Munich Beer Festival of 1849\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddBuzzBeer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://pbs.twimg.com/media/DoonAluUwAAL2n5.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Buzz Beer\",\n    \"beerAbv\" : 5.0,\n    \"beerType\": \"Coffee Ale\",\n    \"beerDescription\": \"Stay up and get drunk all over again!\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddElsinore",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"beerImg\" : \"https://assets.untappd.com/photos/2019_09_21/70b5da216f9c52eae4dd71addcb8a606_640x640.jpg\",\n    \"breweryId\" : null,\n    \"beerName\" : \"Elsinore\",\n    \"beerAbv\" : 3.7,\n    \"beerType\": \"Pilsner\",\n    \"beerDescription\": \"I found a dead mouse in my beer, which means they owe us a free case. Like, we was at a party and, uh, a friend of ours - a COP - had some, and HE PUKED. And he said, uh, come here and get free beer or, uh, he'll press charges.\",\n    \"beerActive\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbeer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BreweryDump",
+					"item": [
+						{
+							"name": "AddRomulan",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://f4.bcbits.com/img/0003722912_10.jpg\",\n        \"breweryHours\": \"open all the time\",\n        \"breweryHistory\": \"Romulan ale? Why Bones, you know this is illegal I only use it for medicinal purposes– James T. Kirk and Leonard McCoy, 2285 \",\n        \"breweryEmail\": \"what is email?\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Romulan Brewers\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.romulan.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"RA 5h 34m 32s | Dec +22° 0′ 52″\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddDuff",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://www.universalorlando.com/webdata/k2/en/us/files/Images/gds/usf-duff-brewery-building-top-sign-b.jpg\",\n        \"breweryHours\": \"4pm-2am weekdays, sunday 12pm-10pm\",\n        \"breweryHistory\": \"Duff Beer is the most popular brand of beer in Springfield. It is Homer's favorite beer and is enthusiastically promoted by Duffman, the company's mascot.\",\n        \"breweryEmail\": \"duffbeer@compuserve.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Duff\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.duffbeer.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"Main st, Springfield OR\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddCheers",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \n        \"breweryImg\": \"https://imageio.forbes.com/specials-images/imageserve/495572400/Cheers-Boston-Beacon-Hill--formerly-the-Bull-and-Finch-Pub----/960x0.jpg?format=jpg&width=960\",\n        \"breweryHours\": \"8pm-8:30pm thursdays on NBC\",\n        \"breweryHistory\": \"Making your way in the world today takes everything you've got. Taking a break from all your worries sure would help a lot. Wouldn't you like to get away? Sometimes you want to go where everybody knows your name.\",\n        \"breweryEmail\": \"WeKnowYourName@AOL.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Cheers\",\n        \"breweryPhone\": \"5555555555\",\n        \"breweryWebsite\": \"www.cheers.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"NBC Thursday night line-up, Boston\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddMosEisley",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://i0.wp.com/theretronetwork.com/wp-content/uploads/2020/05/exterior.jpg?resize=300%2C214&ssl=1\",\n        \"breweryHours\": \"24/7\",\n        \"breweryHistory\": \"No droids, no blasters, no questions asked. Nightly performance by Fingrin Dan and the Modal Nodes.\",\n        \"breweryEmail\": \"WeDontServeDroids@holo.net\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Chalmun's Spaceport Cantina\",\n        \"breweryPhone\": \"1111111111\",\n        \"breweryWebsite\": \"www.moseisleycantina.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"Mos Eisley Spaceport, near landing bay 94, Tatooine\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddMcAnallys",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://ih1.redbubble.net/image.2302927723.4224/st,small,845x845-pad,1000x1000,f8f8f8.jpg\",\n        \"breweryHours\": \"Always Open\",\n        \"breweryHistory\": \"Accorded Neutral Territory. Yearly end of season Superb Owl party hosted by the Red Court, with guest bartender Jackie Daytona\",\n        \"breweryEmail\": \"no email, call\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"McAnally's Pub\",\n        \"breweryPhone\": \"7735551313\",\n        \"breweryWebsite\": \"www.mcanallys.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"Basement of the Butcher building, 13th st, chicago\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddAlamo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://i.pinimg.com/736x/52/32/32/52323279d4e5ba5dc497916b70719103--alamo-gifts-for-him.jpg\",\n        \"breweryHours\": \"2pm - 9pm\",\n        \"breweryHistory\": \"From the lukewarm headwaters of the mighty Brazos River\",\n        \"breweryEmail\": \"alamobeer@alamo.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Alamo Beer\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.alamobeer.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"1616 S Arroyo Way, Arlen, TX\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddBuzzBeer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://bungalower.com/wp-content/uploads/2016/12/Buzz-Beer-Label-Large.jpg\",\n        \"breweryHours\": \"7pm-2am\",\n        \"breweryHistory\": \"Stay up and get drunk!\",\n        \"breweryEmail\": \"drewcarey@aol.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Buzz Beer Brewers\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.buzzbeer.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"1090 S Anderson, Cleveland, OH\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddElsinore",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"breweryImg\": \"https://assets.untappd.com/photo/2017_06_02/67823feb14fa31c6c565b3df1004c67a_320x320.jpg\",\n        \"breweryHours\": \"10pm-5pm\",\n        \"breweryHistory\": \"Ziggy Zoggy Ziggy Zoggy Oi Oi Oi\",\n        \"breweryEmail\": \"thegreatwhitenorth@gmail.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Elsinore Brewery\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.elsinorebeer.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"901 S Eh Way, Toronto, ON\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/addbrewery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"addbrewery"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AllBreweries",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2Nzk0ODYyNH0.twZbum6QSDRTla-5KylEV1vsKV4BjTTYaD-Rq9oj9wEAasPv-fqog6LNTg6fj1qs-LkXf45YefouNzYllUQPLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/breweries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"breweries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBreweryById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2Nzk0ODYyNH0.twZbum6QSDRTla-5KylEV1vsKV4BjTTYaD-Rq9oj9wEAasPv-fqog6LNTg6fj1qs-LkXf45YefouNzYllUQPLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/breweries/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"breweries",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddBrewery",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \n        \"breweryImg\": \"https://bloximages.chicago2.vip.townnews.com/insidenova.com/content/tncms/assets/v3/editorial/f/7b/f7b688ca-3dfa-11ec-a100-3711edf206cc/6184c3f0d4856.image.jpg?resize=600%2C426\",\n        \"breweryHours\": \"4pm-2am weekdays, sunday 12pm-10pm\",\n        \"breweryHistory\": \"Where the elite meet to fete. We had an Aerosmith concert one time. Could happen again, I ain't saying for sure.\",\n        \"breweryEmail\": \"StopPrankCallingMe@Compuserve.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Moe's Tavern\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.moestavern.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"Main st, Springfield MA\"\n    }\n\n    {\n        \n        \"breweryImg\": \"https://imageio.forbes.com/specials-images/imageserve/495572400/Cheers-Boston-Beacon-Hill--formerly-the-Bull-and-Finch-Pub----/960x0.jpg?format=jpg&width=960\",\n        \"breweryHours\": \"8pm-8:30pm thursdays on NBC\",\n        \"breweryHistory\": \"Making your way in the world today takes everything you've got. Taking a break from all your worries sure would help a lot. Wouldn't you like to get away? Sometimes you want to go where everybody knows your name.\",\n        \"breweryEmail\": \"WeKnowYourName@AOL.com\",\n        \"beerId\": null,\n        \"userId\": null,\n        \"breweryName\": \"Cheers\",\n        \"breweryPhone\": \"5555555555\",\n        \"breweryWebsite\": \"www.cheers.com\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"NBC Thursday night line-up, Boston\"\n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addbrewery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addbrewery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBrewery",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2Nzk0ODYyNH0.twZbum6QSDRTla-5KylEV1vsKV4BjTTYaD-Rq9oj9wEAasPv-fqog6LNTg6fj1qs-LkXf45YefouNzYllUQPLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"breweryId\": 4,\n        \"breweryImg\": \"image\",\n        \"breweryHours\": \"1pm-2\",\n        \"breweryHistory\": \"history \",\n        \"breweryEmail\": \"email@email.com\",\n        \"beerId\": 0,\n        \"userId\": 1,\n        \"breweryName\": \"1212\",\n        \"breweryPhone\": \"123456789\",\n        \"breweryWebsite\": \"www.fake.come\",\n        \"breweryActive\" : true,\n        \"breweryAddress\": \"1111 S 11th St.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/updatebrewery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"updatebrewery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBreweriesByUserID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2Nzk0ODYyNH0.twZbum6QSDRTla-5KylEV1vsKV4BjTTYaD-Rq9oj9wEAasPv-fqog6LNTg6fj1qs-LkXf45YefouNzYllUQPLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/breweriesbyuser/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"breweriesbyuser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY2NzkzODExMH0.4FA2hU023hgXLdQAc_gSStsA5x2pWXd55P_5Gk8gblRcZFaib_sv1-3d-u2sXtNYf2HSqP7pHmVhzozULDz91g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Don\",\n    \"password\": \"password\",\n    \"confirmPassword\":\"password\",\n    \"role\" : \"USER\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddBeer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"beerImg\" : \"image\",\n    \"breweryId\" : \"8\",\n    \"beerName\" : \"Rainier\",\n    \"beerAbv\" : 4.5,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"Its pretty darn good \",\n    \"beerActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addbeer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addbeer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBeers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBeersByBrewery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/beersbybrewery/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"beersbybrewery",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBeerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/beer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"beer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBeer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"beerId\" : 3,\n    \"beerImg\" : \"beer image file\",\n    \"breweryId\" : \"2\",\n    \"beerName\" : \"Olympia\",\n    \"beerAbv\" : 4.5,\n    \"beerType\": \"Lager\",\n    \"beerDescription\": \"It's in the water \",\n    \"beerActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/updatebeer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"updatebeer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBeer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/deletebeer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deletebeer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBrewery",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/deletebrewery/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deletebrewery",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
