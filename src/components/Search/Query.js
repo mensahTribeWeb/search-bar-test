@@ -21,7 +21,7 @@ const handleSubmit = (e) => {
 } 
   return(
     <form className="query" onSubmit={handleSubmit}>
-      <h1>Toast</h1>
+      <h1>Home Brew</h1>
       <div className="queryInputs">
         <input 
           placeholder = {placeholder} 
